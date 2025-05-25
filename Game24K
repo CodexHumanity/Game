@@ -1,0 +1,14 @@
+extends Node
+
+onready var player = $player/PlayerAndroid
+onready var inventory = $inventory/InventoryAndroid
+onready var combat_manager = $combat/CombatManagerAndroid
+onready var quest_manager = $quests/QuestManagerAndroid
+onready var world_manager = $world/WorldManagerAndroid
+onready var hud = $ui/HUDAndroid
+onready var audio_manager = $audio/AudioManagerAndroid
+onready var save_load = $saveload/SaveLoadManagerAndroid
+
+func _ready():
+    print("Jeu Android démarré !")
+    save_load.load_game
